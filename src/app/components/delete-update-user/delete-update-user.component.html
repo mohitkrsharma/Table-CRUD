@@ -1,0 +1,37 @@
+<div class="container-fluid">
+  <h2>{{selectedValue==='edit'?'Edit Form':'Delete User'}}</h2>
+  <div class="form-div">
+    <form [formGroup]="editForm" *ngIf="selectedValue==='edit'"
+      (ngSubmit)="submit(e_mail.value,f_name.value,l_name.value)">
+      <div class="first-name-email-div">
+        <mat-form-field appearance="legacy">
+          <mat-label>Email</mat-label>
+          <input matInput placeholder="Email" formControlName="email" [value]="email" #e_mail>
+          <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+        </mat-form-field>
+        <mat-form-field appearance="legacy">
+          <mat-label>First Name</mat-label>
+          <input matInput placeholder="First Name" formControlName="firstName" [value]="first_name" #f_name>
+          <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+        </mat-form-field>
+      </div>
+      <div>
+        <mat-form-field appearance="legacy">
+          <mat-label>Last Name</mat-label>
+          <input matInput placeholder="Last Name" formControlName="lastName" [value]="last_name" #l_name>
+          <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+        </mat-form-field>
+      </div>
+      <div>
+        <button class="btn btn-primary">Edit</button>
+      </div>
+    </form>
+    <div *ngIf="selectedValue==='delete'" class="delete-user">
+      <div class="delete-user-div">
+        <img src="{{avatar_img}}" alt="Profile Image" class="user-image">
+        <p>Are you sure you want to delete the selected user: <strong>{{first_name}} {{last_name}}</strong> ?</p>
+      </div>
+      <button mat-icon-button class="btn btn-danger delete-button" (click)="deleteUser()">Delete</button>
+    </div>
+  </div>
+</div>

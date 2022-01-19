@@ -1,0 +1,35 @@
+.container-fluid {
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.first-name-email-div {
+  display: flex;
+  justify-content: space-between;
+}
+.delete-user {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+h2 {
+  text-align: center;
+}
+.delete-user-div {
+  display: flex;
+  gap: 10px;
+}
+.user-image {
+  height: 50px;
+  width: 50px;
+}
+p {
+  font-size: 14px;
+}
+.delete-button {
+  width: 150px;
+}

@@ -1,0 +1,14 @@
+.add-user-div {
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.name-job-div {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+.button-div {
+  padding: 5px 10px;
+  text-align: right;
+}

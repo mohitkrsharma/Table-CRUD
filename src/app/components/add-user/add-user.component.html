@@ -1,0 +1,18 @@
+<div class="container-fluid add-user-div">
+  <h2>Add New User</h2>
+  <div class="name-job-div">
+    <mat-form-field appearance="legacy">
+      <mat-label>Name</mat-label>
+      <input matInput placeholder="Enter Name" #name>
+      <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+    </mat-form-field>
+    <mat-form-field appearance="legacy">
+      <mat-label>Job</mat-label>
+      <input matInput placeholder="Enter Job" #job>
+      <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+    </mat-form-field>
+  </div>
+  <div class="button-div">
+    <button class="btn btn-primary" (click)="addUser(name.value,job.value)">Add User</button>
+  </div>
+</div>
