@@ -10,6 +10,7 @@ export class ApiService {
   public api_update_selected_user = environment.update_selected_user;
   public api_delete_selected_user = environment.delete_selected_user;
   public add_user = environment.add_user;
+  public validate_user = environment.validate_user;
   userSelectedOption = '';
   userSelectedId = 0;
   constructor(public http: HttpClient) {}
@@ -57,5 +58,10 @@ export class ApiService {
   /* add user */
   addUser(data: any): any {
     return this.http.post(this.add_user, data);
+  }
+
+  /* validate login */
+  validateLogin(data: any): any {
+    return this.http.post(this.validate_user, data);
   }
 }

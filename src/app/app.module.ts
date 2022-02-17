@@ -15,6 +15,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { ToastrModule } from 'ngx-toastr';
 import { AddUserComponent } from './components/add-user/add-user.component';
 import { MatButtonModule } from '@angular/material/button';
+import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { MatButtonModule } from '@angular/material/button';
     TableComponent,
     DeleteUpdateUserComponent,
     AddUserComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,

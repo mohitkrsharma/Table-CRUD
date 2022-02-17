@@ -9,6 +9,7 @@ export const environment = {
   update_selected_user: 'https://reqres.in/api/users/',
   delete_selected_user: 'https://reqres.in/api/users/',
   add_user: 'https://reqres.in/api/users',
+  validate_user: 'https://reqres.in/api/login',
 };
 
 /*
